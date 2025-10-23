@@ -362,7 +362,7 @@ int main()
     payloads.push_back("<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='nhi'/><EventID Qualifiers='16388'>9007</EventID><Version>0</Version><Level>4</Level><Task>0</Task><Opcode>0</Opcode><Keywords>0x80000000000000</Keywords><TimeCreated SystemTime='2025-10-21T06:12:26.5170813Z'/><EventRecordID>37275</EventRecordID><Correlation/><Execution ProcessID='4' ThreadID='440'/><Channel>System</Channel><Computer>DESKTOP-SV73V84</Computer><Security/></System><EventData><Data></Data><Binary>0000000001000000000000002F230440000000000000000000000000000000000000000000000000</Binary></EventData></Event>");
 
 
-    // std::ifstream input("logs\\PaulMondl_DESKTOP-SV73V84\\2025-10-22_17-36-20_System.json");
+    // std::ifstream input("logs\\SV73V84\\2025-10-22_17-36-20_System.json");
     // std::ofstream output("logs\\output\\test.json");
     // std::string line;
 

@@ -384,9 +384,9 @@ int main()
     // std::string rawData = "<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Hyper-V-VmSwitch' Guid='{67dc0d66-3695-47c0-9642-33f76f7bd7ad}'/><EventID>291</EventID><Version>0</Version><Level>4</Level><Task>0</Task><Opcode>0</Opcode><Keywords>0x8000000000000080</Keywords><TimeCreated SystemTime='2025-10-22T06:16:55.8917757Z'/><EventRecordID>38075</EventRecordID><Correlation/><Execution ProcessID='28312' ThreadID='27376'/><Channel>System</Channel><Computer>DESKTOP-SV73V84</Computer><Security UserID='S-1-5-83-1-3073874882-1258444484-1201153155-2920543076'/></System><EventData><Data Name='NicName'>B7379BC2-56C4-4B02-8324-984764F313AE--4B480FFB-2CD7-4F0F-B6AD-B956C0D19EDE</Data><Data Name='NicFName'></Data><Data Name='OldNicIPv4RscEnabled'>0</Data><Data Name='OldNicIPv6RscEnabled'>0</Data><Data Name='NewNicIPv4RscEnabled'>0</Data><Data Name='NewNicIPv6RscEnabled'>0</Data><Data Name='RscStateModifiedReason'>3</Data></EventData></Event>";
 
 
-    std::ifstream input("logs\\SV73V84\\2025-10-22_17-36-20_System.json");
-    std::ofstream output("logs\\output\\test.json");
-    std::string line;
+    // std::ifstream input("logs\\SV73V84\\2025-10-22_17-36-20_System.json");
+    // std::ofstream output("logs\\output\\test.json");
+    // std::string line;
 
     // while(std::getline(input, line)) {
     //     int start = line.find("<Event");
@@ -403,7 +403,7 @@ int main()
         std::string json = buildString(collection);
 
         std::cout << json << std::endl;
-        output << json << std::endl;
+        // output << json << std::endl;
     // }
         
 

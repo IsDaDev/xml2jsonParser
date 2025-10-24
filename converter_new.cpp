@@ -243,7 +243,6 @@ std::string findSameParams(std::string input)
 
 std::string buildString(std::vector<Entry> objects) 
 {
-    std::cout << "Starting build" << std::endl;
     std::string jsonString;
     int squareBrackets = 0;
     int highest = 0;
@@ -287,7 +286,7 @@ std::string buildString(std::vector<Entry> objects)
                                 if (jsonString[jsonString.size() - 2] == '{') jsonString = jsonString.substr(0, jsonString.size() - 2) + "[";
                                 jsonString += "{" + line.inlineValues[0] + ",\"_Value\":\"" + line.value + "\"},"; 
                             } else if (!last.inlineValues.empty() && findSameParams(line.inlineValues[0]) == findSameParams(last.inlineValues[0])) {
-                                jsonString += "{" + line.inlineValues[0] + ",\"_Value\":\"" + line.value + "\"}]"; 
+                                jsonString += "{" + line.inlineValues[0] + ",\"_Value\":\"" + line.value + "\"}],"; 
                                 squareBrackets++;
                             } else {
                                 jsonString += "\"" + line.name + "\": {";
@@ -367,7 +366,6 @@ int main(int argc, char** argv)
     
         std::vector<Entry> collection = findKeys(rawData);
         std::string json = buildString(collection);
-        std::cout << json << std::endl;
         output << json << std::endl;
     }
 

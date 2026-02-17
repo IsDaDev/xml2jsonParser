@@ -18,5 +18,5 @@ g++ xml2json.cpp -o xml2json
 ### Execution
 
 ```
-./xml2json input.xml output.xml
+./xml2json input.xml output.json
 ```
